@@ -1,0 +1,8 @@
+server:
+  port: 8002
+logging:
+  level:
+    cn.controller: debug  
+ribbon:
+  eureka:
+    enabled: true    
