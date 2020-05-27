@@ -1,0 +1,47 @@
+git init 	      初始化
+git add <file>        添加文件到缓存区  可同时添加多个文件
+git commit -m "备注"  提交
+git status            命令可以让我们时刻掌握仓库当前的状态
+git diff	      顾名思义就是查看difference（差异）
+git reset --hard HEAD~1回退一个版本 
+git reset --hard <commit id> 回到新版本
+git reflog	      用来记录你的每一次命令
+git diff HEAD -- <file>命令可以查看工作区和版本库里面最新版本的区别
+git checkout -- <file>丢弃工作区的修改
+git reset HEAD <file> 把暂存区回退到工作区
+git push origin master推送最新修改
+git clone	      把远程库克隆一个本地库
+git checkout -b dev   创建并切换到分支
+git branch dev	      创建分支
+git checkout dev      切换到分支
+git branch	      查看分支
+git push origin dev:dev 推送本地的dev(冒号前面的)分支到远程origin的dev(冒号后面的)分支(没有会自动创建)
+git branch -d dev 删除分支
+git merge dev	      命令用于合并指定分支到当前分支
+git push -f	      强制推送到远程库
+git log --graph --pretty=oneline --abbrev-commit 分支的合并情况
+
+
+
+git remote add origin <地址>关联远程仓库
+git push -u origin master把本地仓库当前分支所有内容推送到远程库上，加上了-u参数，会把本地master和远程master分支关联起来
+ssh-keygen -t rsa -C "549587827@qq.com"
+
+
+git pull origin master –allow-unrelated-histories
+git push -u origin master -f
+
+错误信息为 没有权限时，去github配置秘钥
+git remote add origin git@github.com:codegeekgao/Test.git生成秘钥
+
+错误信息为error: src refspec master does not match any. 执行以下语句
+$ touch README.md
+$ git add README,md
+$ git commit –m’first commit’
+$ git push origin master
+
+git init
+git add *
+git commit -m "first commit"
+git remote add origin https://gitee.com/zhang_xing_xing_xing/warehouse.git
+git push -u origin master
