@@ -1,11 +1,4 @@
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://192.168.63.128:10086/eureka
-  instance:
-    hostname: localhost
+
 
 spring:
   zipkin:
