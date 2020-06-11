@@ -1,0 +1,38 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://192.168.63.128:10086/eureka
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: prescription
+  zipkin:
+    base-url: http://192.168.63.128:9411
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    password: root
+    url: jdbc:mysql:///prescriptiondata?serverTimezone=UTC
+    username: lx
+  session:
+    timeout: 3600000
+logging:
+  level:
+    cn:
+      project:
+        mapper: debug
+ribbon:
+  eureka:
+    enabled: true
+server:
+  port: 8081
+mybatis:
+  type-aliases-package: cn.project.entity
+feign:
+  httpclient:
+    connection-timeout: 3600000
+
+
