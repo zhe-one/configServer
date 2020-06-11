@@ -8,8 +8,6 @@ eureka:
     hostname: localhost
 
 spring:
-  application:
-    name: prescription
   zipkin:
     base-url: http://192.168.63.128:9411
   datasource:
