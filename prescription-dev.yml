@@ -3,12 +3,9 @@
 spring:
   zipkin:
     base-url: http://192.168.63.128:9411
-<<<<<<< HEAD
   sleuth:
     sampler:
       probability: 1.0
-=======
->>>>>>> 5e821518c656c2c97444060daa45150d1e94c966
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     password: root
