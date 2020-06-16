@@ -3,6 +3,8 @@
 spring:
   zipkin:
     base-url: http://192.168.63.128:9411
+    sender:
+      type: rabbit
   sleuth:
     sampler:
       probability: 1.0
@@ -13,6 +15,10 @@ spring:
     username: lx
   session:
     timeout: 3600000
+  rabbitmq:
+    username: admin
+    password: 123456
+    addresses: http://192.168.63.128  
 logging:
   level:
     cn:
