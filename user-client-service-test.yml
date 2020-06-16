@@ -1,0 +1,9 @@
+  
+server:
+  port: 8022
+logging:
+  level:
+    cn.controller: debug  
+ribbon:
+  eureka:
+    enabled: true 
