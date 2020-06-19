@@ -1,5 +1,5 @@
 
-myname: wer
+myname: ttttttt
 spring:
   zipkin:
     base-url: http://192.168.63.128:9411
