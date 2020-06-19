@@ -11,7 +11,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     password: root
-    url: jdbc:mysql:///prescriptiondata?serverTimezone=UTC
+    url: jdbc:mysql://192.168.63.128:3306/prescriptiondata?serverTimezone=UTC
     username: lx
   session:
     timeout: 3600000
